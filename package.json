@@ -1,0 +1,56 @@
+{
+  "name": "is-bound-function",
+  "version": "0.0.0",
+  "description": "Check if given function is bound or not.",
+  "repository": "tunnckoCore/is-bound-function",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bind",
+    "bound",
+    "check",
+    "code",
+    "fn",
+    "function",
+    "is",
+    "is-bound-function",
+    "native",
+    "nativecode",
+    "util",
+    "utils",
+    "validate"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "is-async-function",
+        "is-callback-function",
+        "parse-function",
+        "function-arguments",
+        "parse-arguments"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
