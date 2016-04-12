@@ -28,6 +28,6 @@
 
 module.exports = function isBoundFunction (fn) {
   return typeof fn === 'function'
-    ? fn.toString().indexOf('[native code]') >= 0
+    ? fn.toString() === 'function () { [native code] }'
     : false
 }

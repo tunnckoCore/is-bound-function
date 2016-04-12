@@ -13,6 +13,7 @@
   "dependencies": {},
   "devDependencies": {
     "assertit": "^0.1.0",
+    "bind-context": "^2.0.1",
     "pre-commit": "*"
   },
   "files": [
