@@ -1,6 +1,6 @@
 {
   "name": "is-bound-function",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check if given function is bound or not.",
   "repository": "tunnckoCore/is-bound-function",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
