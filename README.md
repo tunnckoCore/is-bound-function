@@ -4,6 +4,8 @@
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
+You might also be interested in [bind-context][].
+
 ## Install
 ```
 npm i is-bound-function --save
@@ -35,9 +37,32 @@ console.log(isBoundFunction(fixture)) // => false
 console.log(isBoundFunction(fixture.bind({foo: 'bar'}))) // => true
 ```
 
+Notice that if you consider using [bind-context][] library it will be different case.  
+It tries to solve exactly this problem and actually do it well for now.
+
+```js
+var bind = require('bind-context')
+var isBound = require('is-bound-function')
+
+function foobar () { return this.baz }
+
+console.log(isBound(foobar))                      // => false
+console.log(isBound(foobar.bind({ baz: 123 })))   // => true
+console.log(isBound(bind({ baz: 123 }, foobar)))  // => false
+
+var nativeBound = foobar.bind({ a: 'b' })
+var customBound = bind({ a: 'b' }, foobar)
+
+console.log(nativeBound.toString()) // => function () { [native code] }
+console.log(customBound.toString()) // => function foobar () { return this.baz }
+```
+
+So yea, that's the **awesome** point of this lib! :yum:
+
 ## Related
 You might also be interested in these packages:
 
+* [bind-context](https://www.npmjs.com/package/bind-context): Bind context to a function and preserves her name. Can be used… [more](https://www.npmjs.com/package/bind-context) | [homepage](https://github.com/tunnckocore/bind-context)
 * [function-arguments](https://www.npmjs.com/package/function-arguments): Get arguments of a function, useful for and used in dependency injectors.… [more](https://www.npmjs.com/package/function-arguments) | [homepage](https://github.com/tunnckocore/function-arguments)
 * [is-async-function](https://www.npmjs.com/package/is-async-function): Is function really asynchronous function? Trying to guess that based on check… [more](https://www.npmjs.com/package/is-async-function) | [homepage](https://github.com/tunnckocore/is-async-function)
 * [is-callback-function](https://www.npmjs.com/package/is-callback-function): Returns true if function is a callback. Checks its name is one… [more](https://www.npmjs.com/package/is-callback-function) | [homepage](https://github.com/tunnckocore/is-callback-function)
@@ -51,6 +76,8 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 ## [Charlike Make Reagent](http://j.mp/1stW47C) [![new message to charlike][new-message-img]][new-message-url] [![freenode #charlike][freenode-img]][freenode-url]
 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
+
+[bind-context]: https://github.com/tunnckocore/bind-context
 
 [npmjs-url]: https://www.npmjs.com/package/is-bound-function
 [npmjs-img]: https://img.shields.io/npm/v/is-bound-function.svg?label=is-bound-function

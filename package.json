@@ -44,13 +44,17 @@
     ],
     "related": {
       "list": [
+        "bind-context",
         "is-async-function",
         "is-callback-function",
         "parse-function",
-        "function-arguments",
-        "parse-arguments"
+        "parse-arguments",
+        "function-arguments"
       ]
     },
+    "reflinks": [
+      "bind-context"
+    ],
     "lint": {
       "reflinks": true
     }
