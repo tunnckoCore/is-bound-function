@@ -40,7 +40,7 @@ test('should return `true` when function is bound with native `.bind` function',
 
 test('should return `false` when function is bound with `bind-context` lib', function (done) {
   /* istanbul ignore next */
-  function fixture () { return true }
+  function fixture () {return true} // eslint-disable-line
   var boundFn = bindContext({foo: 'bar'}, fixture)
 
   test.strictEqual(isBoundFunction(boundFn), false)
