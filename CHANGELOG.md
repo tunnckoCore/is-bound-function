@@ -1,5 +1,9 @@
 
 
+## 1.0.1 - 2016-04-12
+- Release v1.0.1 / npm@v1.0.1
+- update badges
+
 ## 1.0.0 - 2016-04-12
 - Release v1.0.0 / npm@v1.0.0
 - update readme
