@@ -24,7 +24,7 @@ var cleanupCode = require('cleanup-coverage-code')
 function cleanup (val) {
   val = cleanupCode(val)
   val = val.replace(';', '')
-  val = val.replace('\)\{', ') {')
+  val = val.replace('\)\{', ') {') // eslint-disable-line
   return val
 }
 
