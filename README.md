@@ -1,4 +1,4 @@
-# [is-bound-function][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
+# [is-bound-function][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url] 
 
 > Check if given function is bound or not.
 
@@ -83,7 +83,10 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-img]: https://img.shields.io/npm/v/is-bound-function.svg?label=is-bound-function
 
 [license-url]: https://github.com/tunnckoCore/is-bound-function/blob/master/LICENSE
-[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-img]: https://img.shields.io/npm/l/is-bound-function.svg
+
+[downloads-url]: https://www.npmjs.com/package/is-bound-function
+[downloads-img]: https://img.shields.io/npm/dm/is-bound-function.svg
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/is-bound-function
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/is-bound-function.svg
@@ -120,4 +123,3 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [new-message-url]: https://github.com/tunnckoCore/ama
 [new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
-
